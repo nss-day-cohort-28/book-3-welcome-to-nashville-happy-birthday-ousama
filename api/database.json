@@ -19,6 +19,14 @@
     {
       "park_choice": "Cedar Hill",
       "id": 5
+    },
+    {
+      "park_choice": "Alvin G. Beaman Park",
+      "id": 6
+    },
+    {
+      "park_choice": "Alvin G. Beaman Park",
+      "id": 7
     }
   ]
 }

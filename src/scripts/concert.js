@@ -23,10 +23,11 @@ const concerts_api = {
 const createConcertSelectBox = (concerts) => {
     const concertSelectBox = document.createElement("select")
     concertSelectBox.setAttribute("id", "concert_selection")
-    for (let i = 0; i < concerts.length; i++) {
+    for (let i = 0; i < concerts.resultsPage.results.event.length; i++) {
+        console.log(concerts.resultsPage.results.event[i])
         const concertSelectOption = document.createElement("option")
-        concertSelectOption.setAttribute("value", concerts[0].resultsPage)
-        concertSelectOption.textContent = concerts
+        concertSelectOption.setAttribute("value", concerts.resultsPage.results.event[i].displayName)
+        concertSelectOption.textContent = concerts.resultsPage.results.event[i].displayName
         concertSelectBox.appendChild(concertSelectOption)
     }
     return concertSelectBox
