@@ -1,20 +1,28 @@
 {
   "savedItinerary": [
     {
-      "id": 1,
-      "park_choice": "Potters Field"
+      "park_choice": "Bells Bend Park",
+      "restaurants_choice": "Jacks Bar-B-Que",
+      "concert_name": "Sir Sly and Joywave at Cannery Ballroom (October 26, 2018)",
+      "id": 1
     },
     {
-      "park_choice": "Riverfront Park",
-      "restaurants_choice": "Jacks Bar-B-Que",
-      "concert_name": "The Howlin' Brothers and Lillie Mae at Little Harpeth Brewing (October 26, 2018)",
+      "park_choice": "Percy Warner Park",
+      "restaurants_choice": "Puckett's Grocery & Restaurant",
+      "concert_name": "Lynyrd Skynyrd with Bad Company at Bridgestone Arena (October 26, 2018)",
       "id": 2
     },
     {
-      "park_choice": "Cedar Hill",
-      "restaurants_choice": "Loveless Cafe",
-      "concert_name": "Nashville Symphony at Schermerhorn Symphony Center (October 26, 2018)",
+      "park_choice": "Seven Oaks Park",
+      "restaurants_choice": "McNamara's Irish Pub & Restaurant",
+      "concert_name": "Lynyrd Skynyrd with Bad Company at Bridgestone Arena (October 26, 2018)",
       "id": 3
+    },
+    {
+      "park_choice": "Percy Warner Park",
+      "restaurants_choice": "Jacks Bar-B-Que",
+      "concert_name": "Sir Sly and Joywave at Cannery Ballroom (October 26, 2018)",
+      "id": 4
     }
   ]
 }
