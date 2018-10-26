@@ -22,7 +22,7 @@ const concerts_api = {
 
 const createConcertSelectBox = (concerts) => {
     const concertSelectBox = document.createElement("select")
-    concertSelectBox.setAttribute("id", "concert_selection")
+    concertSelectBox.setAttribute("id", "concerts_selection")
     for (let i = 0; i < concerts.resultsPage.results.event.length; i++) {
         console.log(concerts.resultsPage.results.event[i])
         const concertSelectOption = document.createElement("option")
@@ -48,7 +48,7 @@ document.querySelector(".itinerary__save").addEventListener("click", event => {
 
     const concertInput = document.querySelector("#concerts_selection").value
 
-    const saveItinerary = {
+    const savedItinerary = {
         concert_name: concertInput
     }
 
@@ -57,9 +57,9 @@ document.querySelector(".itinerary__save").addEventListener("click", event => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(saveItinerary)
+        body: JSON.stringify(savedItinerary)
     }
 
-    fetch(local_api1, fetchData)
+    fetch(local_api, fetchData)
 })
 
