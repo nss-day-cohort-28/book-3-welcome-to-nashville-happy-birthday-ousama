@@ -39,19 +39,3 @@ parks_api.getParksSelection()
     let parksSelectionFunction = createParksSelectBox(parks)
     document.getElementById("parks_select").appendChild(parksSelectionFunction)
   })
-
-document.querySelector(".itinerary__save").addEventListener("click", event => {
-  const parkInput = document.querySelector("#park_selection").value
-
-  const savedItinerary = {
-    park_choice: parkInput
-  }
-  let fetchData = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(savedItinerary)
-  }
-  fetch(local_api, fetchData)
-})
