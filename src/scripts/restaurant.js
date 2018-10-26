@@ -1,11 +1,11 @@
-fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city", {
-  headers: {
-    "Content-Type": "application/json",
-    "user-key": "c88f5029b90f29c1ea892dbddc8ed9ac"
-  }
-})
-.then(response => response.json())
-.then(response => console.log(response))
+// fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city", {
+//   headers: {
+//     "Content-Type": "application/json",
+//     "user-key": "c88f5029b90f29c1ea892dbddc8ed9ac"
+//   }
+// })
+// .then(response => response.json())
+// .then(response => console.log(response))
 
 
 const restaurants_url = "https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city"
@@ -13,7 +13,12 @@ const local_api = "http://localhost:8088/savedItinerary"
 
 const restaurants_api = {
   getRestaurantSelection: function () {
-    return fetch(restaurants_url)
+    return fetch(restaurants_url, {
+      headers: {
+        "Content-Type": "application/json",
+        "user-key": "c88f5029b90f29c1ea892dbddc8ed9ac"
+      }
+    })
     .then(response => response.json())
   }
 }
