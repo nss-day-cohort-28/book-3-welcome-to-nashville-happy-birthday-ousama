@@ -43,8 +43,6 @@ parks_api.getParksSelection()
 document.querySelector(".itinerary__save").addEventListener("click", event => {
   const parkInput = document.querySelector("#park_selection").value
 
-
-
   const savedItinerary = {
     park_choice: parkInput
   }
