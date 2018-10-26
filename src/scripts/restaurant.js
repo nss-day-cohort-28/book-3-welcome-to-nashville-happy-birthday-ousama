@@ -18,10 +18,8 @@ const createRestaurantSelectBox = (restaurants) => {
   restaurantSelectBox.setAttribute("id", "restaurants_selection")
   for (let i = 0; i < restaurants.restaurants.length; i++) {
     const restaurantSelectOption = document.createElement("option")
-    //  needs options
     let restaurantChoice = restaurants.restaurants[i].restaurant.name
     restaurantSelectOption.setAttribute("value", restaurantChoice)
-    console.log(restaurantChoice)
     restaurantSelectOption.textContent = restaurantChoice 
     restaurantSelectBox.appendChild(restaurantSelectOption)
   }
@@ -32,21 +30,4 @@ restaurants_api.getRestaurantSelection()
   .then((restaurants) => {
     let restaurantsSelectionFunction = createRestaurantSelectBox(restaurants)
     document.getElementById("restaurants_select").appendChild(restaurantsSelectionFunction)
-  })
-
-
-  document.querySelector(".itinerary__save").addEventListener("click", event => {
-    const restaurantsInput = document.querySelector("#restaurants_selection").value
-
-    const savedItinerary = {
-      restaurants_choice: restaurantsInput
-    }
-    let fetchData = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(savedItinerary)
-    }
-    fetch(local_api, fetchData)
   })
