@@ -1,11 +1,11 @@
-fetch("https://api.songkick.com/api/3.0/metro_areas/11104/calendar.json?apikey=qxYE8Bnx5j7Stvgg")
-    .then((response) => response.json())
-    .then((parsedData) => {
-        console.table(parsedData.resultsPage.results.event)
-    })
+// fetch("https://api.songkick.com/api/3.0/metro_areas/11104/calendar.json?apikey=qxYE8Bnx5j7Stvgg")
+//     .then((response) => response.json())
+//     .then((parsedData) => {
+//         console.table(parsedData.resultsPage.results.event)
+//     })
 
 const concerts_url = "https://api.songkick.com/api/3.0/metro_areas/11104/calendar.json?apikey=qxYE8Bnx5j7Stvgg"
-const local_api = "http://localhost:8088/saveItinerary"
+const local_api1 = "http://localhost:8088/saveItinerary"
 const concerts_api = {
     getConcertSelection: function () {
         return fetch(concerts_url)
@@ -17,10 +17,10 @@ const createConcertSelectBox = (concerts) => {
     const concertSelectBox = document.createElement('select');
     concertSelectBox.setAttribute('id', 'concert_select')
     for (let i = 0; i < concerts.length; i++) {
-        const concertSelectOption = document.createElement('concert_option');
-        concertSelectOption.setAttribute('value', concerts[i])
-        concertSelectOption.textContent = concerts[i];
-        concertSelectBox.appendChild(concertSelectOption)
+        const concertSelectOption = document.createElement('option');
+        concertSelectOption.setAttribute('value', concerts[i].event)
+        concertSelectOption.textContent = concerts[i].event;
+        concertSelectBox.add(concertSelectOption)
     }
     return concertSelectBox;
 }
@@ -50,6 +50,6 @@ document.querySelector(".itinerary__save").addEventListener("click", event => {
         body: JSON.stringify(saveItinerary)
     }
 
-    fetch(local_api, fetchData)
+    fetch(local_api1, fetchData)
 })
 
