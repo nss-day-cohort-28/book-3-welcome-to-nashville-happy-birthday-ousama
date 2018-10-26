@@ -5,72 +5,57 @@
       "park_choice": "Potters Field"
     },
     {
-      "park_choice": "test",
+      "park_choice": "Percy Warner Park",
       "id": 2
     },
     {
-      "park_choice": "tes",
+      "park_choice": "Two Rivers Park",
       "id": 3
     },
     {
+      "park_choice": "Percy Warner Park",
       "id": 4
     },
     {
+      "restaurants_choice": "Puckett's Grocery & Restaurant",
       "id": 5
     },
     {
-      "park_choice": {},
+      "restaurants_choice": "The Pharmacy Burger Parlor & Beer Garden",
       "id": 6
     },
     {
+      "park_choice": "Alvin G. Beaman Park",
       "id": 7
     },
     {
+      "restaurants_choice": "The Southern Steak & Oyster",
       "id": 8
     },
     {
+      "park_choice": "Two Rivers Park",
       "id": 9
     },
     {
+      "park_choice": "Bells Bend Park",
+      "restaurants_choice": "The Pharmacy Burger Parlor & Beer Garden",
       "id": 10
     },
     {
+      "park_choice": "Riverfront Park",
       "id": 11
     },
     {
+      "restaurants_choice": "Fido",
       "id": 12
     },
     {
+      "park_choice": "Alvin G. Beaman Park",
       "id": 13
     },
     {
+      "restaurants_choice": "Demos' Steak and Spaghetti House",
       "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "park_choice": {},
-      "id": 16
-    },
-    {
-      "park_choice": {},
-      "id": 17
-    },
-    {
-      "park_choice": {},
-      "id": 18
-    },
-    {
-      "park_choice": {},
-      "id": 19
-    },
-    {
-      "id": 20
-    },
-    {
-      "park_choice": "Two Rivers Park",
-      "id": 21
     }
   ]
 }

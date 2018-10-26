@@ -12,15 +12,16 @@ const createParksSelectBox = (parks) => {
   parksSelectBox.setAttribute("id", "park_selection")
   for (let i = 0; i < parks.length; i++) {
     if (parks[i].dog_park === "Yes") {
-      // console.log(parks[i])
-      
       const parksSelectOption = document.createElement("option")
-      // come back and refine
       parksSelectOption.setAttribute("value", parks[i].park_name)
-      parksSelectOption.textContent = parks[i].park_name
-      // console.log(parks[i].park_name)
+      parksSelectOption.textContent = `Dog Park - ${parks[i].park_name}`
       parksSelectBox.appendChild(parksSelectOption)
-    }
+    } else if (parks[i].hiking_trails === "Yes") {
+        const parksSelectOption = document.createElement("option")
+        parksSelectOption.setAttribute("value", parks[i].park_name)
+        parksSelectOption.textContent = `Hiking Trail - ${parks[i].park_name}`
+        parksSelectBox.appendChild(parksSelectOption)
+    } 
   }
   return parksSelectBox
 }
@@ -33,8 +34,8 @@ parks_api.getParksSelection()
 
 document.querySelector(".itinerary__save").addEventListener("click", event => {
   const parkInput = document.querySelector("#park_selection").value
-  
-  
+
+
 
   const savedItinerary = {
     park_choice: parkInput
