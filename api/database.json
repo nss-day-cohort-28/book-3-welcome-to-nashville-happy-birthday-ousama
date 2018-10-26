@@ -1,20 +1,40 @@
 {
   "savedItinerary": [
     {
-      "id": 1,
-      "park_choice": "Potters Field"
+      "park_choice": "Bells Bend Park",
+      "restaurants_choice": "Jacks Bar-B-Que",
+      "concert_name": "Sir Sly and Joywave at Cannery Ballroom (October 26, 2018)",
+      "id": 1
     },
     {
       "park_choice": "Percy Warner Park",
+      "restaurants_choice": "Puckett's Grocery & Restaurant",
+      "concert_name": "Lynyrd Skynyrd with Bad Company at Bridgestone Arena (October 26, 2018)",
       "id": 2
     },
     {
-      "park_choice": "Two Rivers Park",
+      "park_choice": "Seven Oaks Park",
+      "restaurants_choice": "McNamara's Irish Pub & Restaurant",
+      "concert_name": "Lynyrd Skynyrd with Bad Company at Bridgestone Arena (October 26, 2018)",
       "id": 3
     },
     {
       "park_choice": "Percy Warner Park",
+      "restaurants_choice": "Jacks Bar-B-Que",
+      "concert_name": "Sir Sly and Joywave at Cannery Ballroom (October 26, 2018)",
       "id": 4
+    },
+    {
+      "park_choice": "Two Rivers Park",
+      "restaurants_choice": "The Pharmacy Burger Parlor & Beer Garden",
+      "concert_name": "Sir Sly and Joywave at Cannery Ballroom (October 26, 2018)",
+      "id": 5
+    },
+    {
+      "park_choice": "Centennial Park",
+      "restaurants_choice": "McNamara's Irish Pub & Restaurant",
+      "concert_name": "Matisyahu at City Winery (October 26, 2018)",
+      "id": 6
     }
   ]
 }
