@@ -39,8 +39,6 @@ const itineraryEntryComponentObject = {
 
 const itineraryEntryComponentObjectManager = Object.create(itineraryEntryComponentObject);
 
-const componentMakerObjectManager = Object.create(componentMakerObject);
-
 API.getItineraryEntries()
     .then((itineraryEntries) => {
         document.querySelector(".entryLog").innerHTML += itineraryEntryComponentObjectManager.itineraryEntryComponent(itineraryEntries.slice(-1)[0]);
