@@ -20,8 +20,6 @@ const createConcertSelectBox = (concerts) => {
     return concertSelectBox
   }
   
-  
-
 concerts_api.getConcertSelection()
     .then((concerts) => {
         let concertSelectionFunction = createConcertSelectBox(concerts)
