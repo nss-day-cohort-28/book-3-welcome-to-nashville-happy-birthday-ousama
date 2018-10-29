@@ -11,19 +11,16 @@ const createParksSelectBox = (parks) => {
   const parksSelectBox = document.createElement("select")
   parksSelectBox.setAttribute("id", "park_selection")
   for (let i = 0; i < parks.length; i++) {
-    //pulling dog parks
     if (parks[i].dog_park === "Yes") {
       const parksSelectOption = document.createElement("option")
       parksSelectOption.setAttribute("value", parks[i].park_name)
       parksSelectOption.textContent = `Dog Park - ${parks[i].park_name}`
       parksSelectBox.appendChild(parksSelectOption)
-      // pulling hiking trails
     } else if (parks[i].hiking_trails === "Yes") {
         const parksSelectOption = document.createElement("option")
         parksSelectOption.setAttribute("value", parks[i].park_name)
         parksSelectOption.textContent = `Hiking Trail - ${parks[i].park_name}`
         parksSelectBox.appendChild(parksSelectOption)
-      // pulling disc golf
     } else if (parks[i].disc_golf === "Yes") {
         const parksSelectOption = document.createElement("option")
         parksSelectOption.setAttribute("value", parks[i].park_name)

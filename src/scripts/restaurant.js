@@ -1,5 +1,4 @@
 const restaurants_url = "https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city"
-// const local_api = "http://localhost:8088/savedItinerary"
 
 const restaurants_api = {
   getRestaurantSelection: function () {
