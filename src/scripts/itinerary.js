@@ -23,7 +23,6 @@ const itineraryEntryComponentObject = {
                 <p class="entry">${entry.restaurants_choice}</p>
                 <h1>Concert:</h1>
                 <p class="entry">${entry.concert_name}</p>
-                <br/>
                 <button id="btn" class="btn itinerary__update">Update Your Date</button>
             </div>
             `
