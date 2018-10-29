@@ -1,5 +1,10 @@
 {
   "savedItinerary": [
-    
+    {
+      "park_choice": "Percy Warner Park",
+      "restaurants_choice": "Loveless Cafe",
+      "concert_name": "James Carothers at Dierks Bentley’s Whiskey Row - Nashville (October 29, 2018) (CANCELLED) ",
+      "id": 1
+    }
   ]
 }
