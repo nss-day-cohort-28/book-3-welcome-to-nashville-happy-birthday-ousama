@@ -19,7 +19,7 @@ const itineraryEntryComponentObject = {
             <div class="form-post">
                 <h1>Park:</h1>
                 <p class="entry">${entry.park_choice}</p>
-                <h1>Resaurant:</h1>
+                <h1>Restaurant:</h1>
                 <p class="entry">${entry.restaurants_choice}</p>
                 <h1>Concert:</h1>
                 <p class="entry">${entry.concert_name}</p>
