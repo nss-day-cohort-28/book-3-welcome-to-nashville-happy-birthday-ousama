@@ -13,22 +13,20 @@
 </head>
 
 <body>
-  <img class="img_css" src="images/DNLogo.png" alt="Date Nashville">
+  <img id="DNLogo" src="/images/dateNashvilleClean.png" alt="Date Nashville">
   <form action="" id ="form" class="form">
     <fieldset id="parks_select" name="parks_select">
-        <label for="parks">Parks</label><br/>
+        <label class="parks_text" for="parks">Pick a Park...</label><br/>
         
     </fieldset>
     <fieldset id="restaurants_select" name="restaurants_select">
-        <label for="restaurants">Restaurants</label><br/>
+        <label class="restaurants_text" for="restaurants">Find a Restaurant...</label><br/>
     </fieldset>
-    <!-- <fieldset class="select" id="select">
-    </fieldset> -->
     <fieldset id="concerts_select" name="concerts_select">
-      <label for="concerts">Concerts</label><br />
+      <label class="concerts_text" for="concerts">See a Show...</label><br />
     </fieldset>
-    <button id="css_button" class="btn itinerary__save">Save Your Itinerary</button>
 </form>
+  <article class="entryLog"></article>
   <script src="/scripts/parks.js"></script>
   <script src="/scripts/restaurant.js"></script>
   <script src="/scripts/concert.js"></script>

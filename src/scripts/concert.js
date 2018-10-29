@@ -1,6 +1,5 @@
 
 const concerts_url = "https://api.songkick.com/api/3.0/metro_areas/11104/calendar.json?apikey=qxYE8Bnx5j7Stvgg"
-// const local_api = "http://localhost:8088/saveItinerary"
 const concerts_api = {
     getConcertSelection: function () {
         return fetch(concerts_url)
@@ -19,8 +18,6 @@ const createConcertSelectBox = (concerts) => {
     }
     return concertSelectBox
   }
-  
-  
 
 concerts_api.getConcertSelection()
     .then((concerts) => {
