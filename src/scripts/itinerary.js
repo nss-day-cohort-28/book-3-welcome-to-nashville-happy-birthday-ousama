@@ -10,17 +10,20 @@ const itineraryEntryComponentObject = {
         if(!entry) {
             return `
             <div class="form-post">
-                <p>Submit Your First Entry</p>
-                <button class="btn itinerary__save">Save Your Itinerary</button>
+                <p class="entry_text">Have a date but can't think of anything?</p>
+                <button  id="btn" class="btn itinerary__save">Submit Your Date Idea</button>
             </div>
             `
         } else {
             return `
             <div class="form-post">
-                <p>${entry.park_choice}</p>
-                <p>${entry.restaurants_choice}</p>
-                <p>${entry.concert_name}</p>
-                <button class="btn itinerary__update">Update Your Itinerary</button>
+                <h1>Park:</h1>
+                <p class="entry">${entry.park_choice}</p>
+                <h1>Resaurant:</h1>
+                <p class="entry">${entry.restaurants_choice}</p>
+                <h1>Concert:</h1>
+                <p class="entry">${entry.concert_name}</p>
+                <button id="btn" class="btn itinerary__update">Update Your Date</button>
             </div>
             `
         }
